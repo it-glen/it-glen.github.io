@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh_CN">
+<html lang="zh-CN">
   <head>
   <meta charset="UTF-8">
   <meta 
@@ -18,17 +18,17 @@
   <link 
     rel="icon" 
     href="/">
-  <title>Archive</title>
+  <title>归档</title>
   
     
       <meta 
         property="og:title" 
-        content="Archive">
+        content="归档">
     
     
       <meta 
         property="og:url" 
-        content="https://it-glen.github.io/archives/2022/11/index.html">
+        content="http://example.com/archives/2022/11/index.html">
     
     
       <meta 
@@ -79,34 +79,6 @@
   </script>
   
     
-      
-      
-      
-      
-        
-        
-        
-        <script>
-          function prismThemeChange() {
-            if(document.getElementById('theme-color').dataset.mode === 'dark') {
-              if(document.querySelector('[data-prism]')) {
-                changeCSS('/js/lib/prism/prism-tomorrow.min.css', '[data-prism]', 'prism-tomorrow');
-              } else {
-                loadCSS('/js/lib/prism/prism-tomorrow.min.css', 'prism', 'prism-tomorrow');
-              }
-            } else {
-              if(document.querySelector('[data-prism]')) {
-                changeCSS('/js/lib/prism/prism.min.css', '[data-prism]', 'prism');
-              } else {
-                loadCSS('/js/lib/prism/prism.min.css', 'prism', 'prism');
-              }
-            }
-          }
-          prismThemeChange()
-        </script>
-      
-      
-    
   
   <script>
     // control reverse button
@@ -146,18 +118,15 @@
         localStorage.removeItem('user-color-scheme');
         document.getElementById('theme-color').content = themeColor[setting];
         document.getElementById('theme-color').dataset.mode = setting;
-        prismThemeChange();
       } else if(reverseDarkList[setting]) {
         document.documentElement.setAttribute('data-user-color-scheme', setting);
         document.getElementById('theme-color').content = themeColor[setting];
         document.getElementById('theme-color').dataset.mode = setting;
-        prismThemeChange();
       } else {
         document.documentElement.removeAttribute('data-user-color-scheme');
         localStorage.removeItem('user-color-scheme');
         document.getElementById('theme-color').content = themeColor[getCssMediaQuery()];
         document.getElementById('theme-color').dataset.mode = getCssMediaQuery();
-        prismThemeChange();
       }
     };
     setDarkmode();
@@ -194,7 +163,7 @@
         href="/" 
         class="navbar-menu-item">
         
-          Home
+          首页
         
       </a>
     
@@ -202,7 +171,7 @@
         href="/archives" 
         class="navbar-menu-item">
         
-          Archive
+          归档
         
       </a>
     
@@ -210,7 +179,7 @@
         href="/tags" 
         class="navbar-menu-item">
         
-          Tags
+          标签
         
       </a>
     
@@ -218,7 +187,7 @@
         href="/categories" 
         class="navbar-menu-item">
         
-          Categories
+          分类
         
       </a>
     
@@ -226,7 +195,7 @@
         href="/about" 
         class="navbar-menu-item">
         
-          About
+          关于
         
       </a>
     
@@ -234,7 +203,7 @@
         href="/links" 
         class="navbar-menu-item">
         
-          Friends
+          友链
         
       </a>
     
@@ -296,19 +265,19 @@
     class="author-posts-count" 
     href="/archives">
     <span>2</span>
-    <span>Posts</span>
+    <span>文章</span>
   </a>
   <a 
     class="author-categories-count" 
     href="/categories">
     <span>0</span>
-    <span>Categories</span>
+    <span>分类</span>
   </a>
   <a 
     class="author-tags-count" 
     href="/tags">
     <span>0</span>
-    <span>Tags</span>
+    <span>标签</span>
   </a>
 </div>
 
@@ -323,7 +292,7 @@
     <i 
       class="iconfont icon-fenlei" 
       style="padding-right: 2px;">
-    </i>Categories
+    </i>分类
   </div>
   <div class="categories-list">
     
@@ -337,7 +306,7 @@
     <i 
       class="iconfont icon-biaoqian" 
       style="padding-right: 2px;">
-    </i>hot tags
+    </i>热门标签
   </div>
   <div class="tags-list">
     
@@ -352,7 +321,7 @@
     <i 
       class="iconfont icon-wodebaobiao" 
       style="padding-right: 2px;">
-    </i>Archive
+    </i>归档
   </div>
   <div class="archive-card-list">
     
@@ -385,7 +354,7 @@
             <main class="main-column">
               
 <div class="card card-content">
-  <h1 class="widget-title">Archive</h1>
+  <h1 class="widget-title">归档</h1>
 </div>
 <div class="archive-timeline">
   
@@ -400,7 +369,7 @@
           <div class="archive-timeline-post-date">2022-11-04</div>
           <div class="archive-timeline-post-content">
             <a 
-              href="/post/my-first-blog.html"
+              href="/2022/11/04/my-first-blog/"
               class="archive-timeline-post-item">
               my-first-blog
             </a>
@@ -416,7 +385,7 @@
           <div class="archive-timeline-post-date">2022-11-04</div>
           <div class="archive-timeline-post-content">
             <a 
-              href="/post/hello-world.html"
+              href="/2022/11/04/hello-world/"
               class="archive-timeline-post-item">
               Hello World
             </a>
@@ -439,18 +408,18 @@
     <i 
       class="iconfont icon-wenzhang_huaban" 
       style="padding-right: 2px;">
-    </i>Recent Posts
+    </i>最近文章
   </div>
   <div class="recent-posts-list">
     
       <div class="recent-posts-item">
         <div class="recent-posts-item-title">2022-11-04</div>
-        <a href="/post/my-first-blog.html"><div class="recent-posts-item-content">my-first-blog</div></a>
+        <a href="/2022/11/04/my-first-blog/"><div class="recent-posts-item-content">my-first-blog</div></a>
       </div>
     
       <div class="recent-posts-item">
         <div class="recent-posts-item-title">2022-11-04</div>
-        <a href="/post/hello-world.html"><div class="recent-posts-item-content">Hello World</div></a>
+        <a href="/2022/11/04/hello-world/"><div class="recent-posts-item-content">Hello World</div></a>
       </div>
     
   </div>
@@ -464,7 +433,7 @@
     <i 
       class="iconfont icon-wodebaobiao" 
       style="padding-right: 2px;">
-    </i>Archive
+    </i>归档
   </div>
   <div class="archive-card-list">
     
