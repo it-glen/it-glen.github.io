@@ -28,12 +28,12 @@
     
       <meta 
         property="og:url" 
-        content="https://it-glen.github.io/archives/index.html">
+        content="http://example.com/archives/index.html">
     
     
       <meta 
         property="og:img" 
-        content="https://img.songhn.com/img/Y67gdd.png">
+        content="https://cdn.jsdelivr.net/gh/it-glen/blog-img/2022/11/202211051528602.png">
     
     
     
@@ -137,6 +137,8 @@
     <link rel="preload" href="/js/lib/lightbox/baguetteBox.min.js" as="script">
     <link rel="preload" href="/js/lib/lightbox/baguetteBox.min.css" as="style" >
   
+  
+    <link rel="preload" href="/js/lib/lozad.min.js" as="script">
   
   
   
@@ -257,7 +259,7 @@
               <div class="card card-author">
                 
   <img 
-    src="https://img.songhn.com/img/Y67gdd.png" 
+    src="https://cdn.jsdelivr.net/gh/it-glen/blog-img/2022/11/202211051528602.png" 
     class="author-img"
     width="88"
     height="88"
@@ -588,6 +590,23 @@
         loadScript('/js/lib/busuanzi.min.js') 
       </script>
      
+    
+      <script>
+        var addLazyload = function () {
+          var observer = lozad('.lozad', {
+            load: function (el) {
+              el.srcset = el.getAttribute('data-src')
+            },
+            loaded: function (el) {
+              el.classList.add('loaded')
+            },
+          })
+          observer.observe()
+        }
+      </script>
+      <script>
+        loadScript('/js/lib/lozad.min.js', addLazyload)
+      </script>
     
     <script src="//instant.page/5.1.0" type="module"
       integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
