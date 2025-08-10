@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Hexo</title>
   
-  
+  <subtitle>glen &amp; blog</subtitle>
   <link href="https://blog.2019279.xyz/atom.xml" rel="self"/>
   
   <link href="https://blog.2019279.xyz/"/>
@@ -10,7 +10,7 @@
   <id>https://blog.2019279.xyz/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>glen</name>
     
   </author>
   
